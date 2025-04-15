@@ -1,7 +1,6 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
-import { Home, Map, MessageSquare, Settings, Star, Users, Mic } from "lucide-react";
+import { Home, Map, MessageSquare, Settings, Star, Users, Mic, PlusCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { userProfile } from "@/data/mockData";
@@ -87,6 +86,16 @@ const Sidebar: React.FC = () => {
             <Link to="/community">
               <Users className="h-4 w-4" />
               Community
+            </Link>
+          </Button>
+          <Button
+            asChild
+            variant="ghost"
+            className="justify-start gap-2"
+          >
+            <Link to="/add-restroom">
+              <PlusCircle className="h-4 w-4" />
+              Add Restroom
             </Link>
           </Button>
           <Button
